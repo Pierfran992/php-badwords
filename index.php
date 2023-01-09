@@ -11,9 +11,23 @@
 <body>
     <h1>
         <?php
-        echo "Hello World";
+        $title = "Hello World PHP";
+        echo $title;
         ?>
     </h1>
+
+    <p>
+        <?php
+        $citDante = "Nel mezzo del camin di nostra vita, mi ritrovai per una selva oscura, che la retta via era smarrita.";
+        echo "&quot;" . $citDante . "&quot;";
+        ?>
+    </p>
+
+    <span>
+        <?php
+        echo "La lunghezza del verso è " . strlen($citDante) . " caratteri";
+        ?>
+    </span>
 </body>
 
 </html>
