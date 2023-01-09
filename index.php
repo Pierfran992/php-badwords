@@ -36,6 +36,12 @@
         echo "&quot;" . $newString . "&quot;";
         ?>
     </p>
+
+    <span>
+        <?php
+        echo "La lunghezza del verso è " . strlen($newString) . " caratteri";
+        ?>
+    </span>
 </body>
 
 </html>
