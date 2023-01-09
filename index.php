@@ -18,7 +18,7 @@
 
     <p>
         <?php
-        $citDante = "Nel mezzo del camin di nostra vita, mi ritrovai per una selva oscura, che la retta via era smarrita.";
+        $citDante = "Nel mezzo del cammin di nostra vita, mi ritrovai per una selva oscura, che la retta via era smarrita.";
         echo "&quot;" . $citDante . "&quot;";
         ?>
     </p>
@@ -28,6 +28,14 @@
         echo "La lunghezza del verso è " . strlen($citDante) . " caratteri";
         ?>
     </span>
+
+    <p>
+        <?php
+        $censura = $_GET['parola'];
+        $newString = str_replace($censura, "***", $citDante);
+        echo "&quot;" . $newString . "&quot;";
+        ?>
+    </p>
 </body>
 
 </html>
